@@ -19,9 +19,17 @@ Answer the following questions about the HTTP request and response process:
 
 1. What type of architecture does the HTTP request and response process occur in?
 
+```bash
+Client-Server Architecture
+```
 
 2. What are the different parts of an HTTP request?
 
+```bash
+Request Line
+Request Headers
+Request Body
+```
 
 3. Which part of an HTTP request is optional?
 
