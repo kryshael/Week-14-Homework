@@ -33,66 +33,96 @@ Request Body
 
 3. Which part of an HTTP request is optional?
 
+```bash
+Request Body
+```
 
 4. What are the three parts of an HTTP response?
 
+```bash
+Headers
+Status Line
+Body
+```
 
 5. Which number class of status codes represents errors?
 
+```bash
+400 range
+```
 
 6. What are the two most common request methods that a security professional will encounter?
 
+```bash
+GET Request
+POST Request
+```
 
 7. Which type of HTTP request method is used for sending data?
 
+```bash
+POST Request
+```
 
 8. Which part of an HTTP request contains the data being sent to the server?
 
+```bash
+Request Body
+```
 
 9. In which part of an HTTP response does the browser receive the web code to generate and style a web page?
 
+```bash
+Response Body
+```
 
 
-Using curl
+### Using cURL
+
 Answer the following questions about curl:
 
 
-What are the advantages of using curl over the browser?
+1. What are the advantages of using curl over the browser?
 
 
-Which curl option is used to change the request method?
+2. Which curl option is used to change the request method?
 
 
-Which curl option is used to set request headers?
+3. Which curl option is used to set request headers?
 
 
-Which curl option is used to view the response header?
+4. Which curl option is used to view the response header?
 
 
-Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?
+5. Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?
 
 
 
-Sessions and Cookies
+### Sessions and Cookies
+
 Recall that HTTP servers need to be able to recognize clients from one another. They do this through sessions and cookies.
+
 Answer the following questions about sessions and cookies:
 
 
-Which response header sends a cookie to the client?
+1. Which response header sends a cookie to the client?
 HTTP/1.1 200 OK
 Content-type: text/html
 Set-Cookie: cart=Bob
 
 
-Which request header will continue the client's session?
+2. Which request header will continue the client's session?
 GET /cart HTTP/1.1
 Host: www.example.org
 Cookie: cart=Bob
 
 
 
-Example HTTP Requests and Responses
+### Example HTTP Requests and Responses
+
 Look through the following example HTTP request and response and answer the following questions:
+
+```bash
 HTTP Request
 POST /login.php HTTP/1.1
 Host: example.com
@@ -104,21 +134,23 @@ Upgrade-Insecure-Requests: 1
 User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Mobile Safari/537.36
 
 username=Barbara&password=password
+```
+
+1. What is the request method?
 
 
-What is the request method?
+2. Which header expresses the client's preference for an encrypted response?
 
 
-Which header expresses the client's preference for an encrypted response?
+3. Does the request have a user session associated with it?
 
 
-Does the request have a user session associated with it?
+4. What kind of data is being sent from this request body?
 
 
-What kind of data is being sent from this request body?
+### HTTP Response
 
-
-HTTP Response
+```bash
 HTTP/1.1 200 OK
 Date: Mon, 16 Mar 2020 17:05:43 GMT
 Last-Modified: Sat, 01 Feb 2020 00:00:00 GMT
@@ -133,64 +165,66 @@ X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 
 [page content]
+```
+
+1. What is the response status code?
 
 
-What is the response status code?
+2. What web server is handling this HTTP response?
 
 
-What web server is handling this HTTP response?
+3. Does this response have a user session associated to it?
 
 
-Does this response have a user session associated to it?
+4. What kind of content is likely to be in the [page content] response body?
 
 
-What kind of content is likely to be in the [page content] response body?
-
-
-If your class covered security headers, what security request headers have been included?
+5. If your class covered security headers, what security request headers have been included?
 
 
 
-Monoliths and Microservices
+### Monoliths and Microservices
+
 Answer the following questions about monoliths and microservices:
 
 
-What are the individual components of microservices called?
+1. What are the individual components of microservices called?
 
 
-What is a service that writes to a database and communicates to other services?
+2. What is a service that writes to a database and communicates to other services?
 
 
-What type of underlying technology allows for microservices to become scalable and have redundancy?
+3. What type of underlying technology allows for microservices to become scalable and have redundancy?
 
 
 
-Deploying and Testing a Container Set
+### Deploying and Testing a Container Set
+
 Answer the following questions about multi-container deployment:
 
 
-What tool can be used to deploy multiple containers at once?
+1. What tool can be used to deploy multiple containers at once?
 
 
-What kind of file format is required for us to deploy a container set?
-
-
-
-Databases
-
-
-Which type of SQL query would we use to see all of the information within a table called customers?
-
-
-Which type of SQL query would we use to enter new data into a table? (You don't need a full query, just the first part of the statement.)
-
-
-Why would we never run DELETE FROM <table-name>; by itself?
+2. What kind of file format is required for us to deploy a container set?
 
 
 
+###Databases
 
-Bonus Challenge Overview: The Cookie Jar
+1. Which type of SQL query would we use to see all of the information within a table called customers?
+
+
+2. Which type of SQL query would we use to enter new data into a table? (You don't need a full query, just the first part of the statement.)
+
+
+3. Why would we never run DELETE FROM <table-name>; by itself?
+
+
+
+
+### Bonus Challenge Overview: The Cookie Jar
+  
 For this challenge, you'll once again be using curl, but this time to manage and swap sessions.
 ⚠ Heads Up: You'll need to have WordPress set up from the Swapping Sessions activity from Day 1 of this unit. If you have not done it or it is improperly set up, please refer to the Day 1 student guide and the Swapping Sessions activity file.
 If you recall, on Day 1 of this unit you used Google Chrome's Cookie-Editor extension to swap sessions and cookies. For this homework challenge, we'll be using the command-line tool curl to practice swapping cookie and sessions within the WordPress app.
