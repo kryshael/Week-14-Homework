@@ -14,7 +14,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 ### HTTP Requests and Responses
 
-Answer the following questions about the HTTP request and response process.
+Answer the following questions about the HTTP request and response process:
 
 
 What type of architecture does the HTTP request and response process occur in?
