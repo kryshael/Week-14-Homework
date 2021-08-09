@@ -100,7 +100,7 @@ Answer the following questions about curl:
 
 ### Sessions and Cookies
 
-Recall that HTTP servers need to be able to recognize clients from one another. They do this through sessions and cookies.
+#### Recall that HTTP servers need to be able to recognize clients from one another. They do this through sessions and cookies.
 
 Answer the following questions about sessions and cookies:
 
